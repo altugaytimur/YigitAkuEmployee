@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.MVC", "YigitAkuEmployee\YigitAkuEmployee.MVC.csproj", "{04811FAC-4472-447B-B4F0-314C00C86875}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.MVC", "YigitAkuEmployee\YigitAkuEmployee.MVC.csproj", "{04811FAC-4472-447B-B4F0-314C00C86875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Core", "YigitAkuEmployee.Core\YigitAkuEmployee.Core.csproj", "{5042B174-A0BD-4121-93CD-637960900E7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Core", "YigitAkuEmployee.Core\YigitAkuEmployee.Core.csproj", "{5042B174-A0BD-4121-93CD-637960900E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Entities", "YigitAkuEmployee.Entities\YigitAkuEmployee.Entities.csproj", "{40BFB318-DA1C-44FB-9123-99DFE173BE9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Entities", "YigitAkuEmployee.Entities\YigitAkuEmployee.Entities.csproj", "{40BFB318-DA1C-44FB-9123-99DFE173BE9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Dtos", "YigitAkuEmployee.Dtos\YigitAkuEmployee.Dtos.csproj", "{7038298F-2258-4454-8630-6813D0F6D010}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Dtos", "YigitAkuEmployee.Dtos\YigitAkuEmployee.Dtos.csproj", "{7038298F-2258-4454-8630-6813D0F6D010}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Dal", "YigitAkuEmployee.Dal\YigitAkuEmployee.Dal.csproj", "{DBDB760C-D85C-40B0-A964-1FC9B97378E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Dal", "YigitAkuEmployee.Dal\YigitAkuEmployee.Dal.csproj", "{DBDB760C-D85C-40B0-A964-1FC9B97378E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Dal.EF", "YigitAkuEmployee.Dal.EF\YigitAkuEmployee.Dal.EF.csproj", "{A8D4E8E6-3C1C-4D46-B443-FA930FFE1661}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Dal.EF", "YigitAkuEmployee.Dal.EF\YigitAkuEmployee.Dal.EF.csproj", "{A8D4E8E6-3C1C-4D46-B443-FA930FFE1661}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Dal.İnt", "YigitAkuEmployee.Dal.İnt\YigitAkuEmployee.Dal.İnt.csproj", "{AD346EC3-1C61-478F-8866-7C0B4A0C6BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Dal.İnt", "YigitAkuEmployee.Dal.İnt\YigitAkuEmployee.Dal.İnt.csproj", "{AD346EC3-1C61-478F-8866-7C0B4A0C6BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Ent.Conf", "YigitAkuEmployee.Ent.Conf\YigitAkuEmployee.Ent.Conf.csproj", "{92BEFC21-629B-45D9-B7A8-061B9AEEB417}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Ent.Conf", "YigitAkuEmployee.Ent.Conf\YigitAkuEmployee.Ent.Conf.csproj", "{92BEFC21-629B-45D9-B7A8-061B9AEEB417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Business", "YigitAkuEmployee.Business\YigitAkuEmployee.Business.csproj", "{93558524-3CC9-4EA1-BCB1-2783CEFF5696}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{92BEFC21-629B-45D9-B7A8-061B9AEEB417}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92BEFC21-629B-45D9-B7A8-061B9AEEB417}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92BEFC21-629B-45D9-B7A8-061B9AEEB417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

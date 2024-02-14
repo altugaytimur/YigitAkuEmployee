@@ -1,10 +1,5 @@
-﻿using Castle.Core.Configuration;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using YigitAkuEmployee.Dal.Contexts;
 using YigitAkuEmployee.Entities.DbSets;
 
@@ -26,7 +21,12 @@ namespace YigitAkuEmployee.Dal.EF.Seeds
                 {
                 new Employee
                 {
-                 
+                    FirstName="Altug",
+                    LastName="Aytimur",
+                    Email="altugaytimur@hotmail.com",
+                    DateOfBirth=new DateTime(1990,09,11),
+                    Department="Bilgi Teknolojileri",
+                    PhoneNumber="05321707878",
                     CreatedBy = "System",
                     CreatedDate = DateTime.UtcNow,
                     ModifiedBy = "System",
@@ -35,7 +35,13 @@ namespace YigitAkuEmployee.Dal.EF.Seeds
                 },
                 new Employee
                 {
-                   
+
+                    FirstName="Bilal",
+                    LastName="Arslan",
+                    Email="bilalarslan@hotmail.com",
+                    DateOfBirth=new DateTime(1992,09,11),
+                    Department="Bilgi Teknolojileri",
+                    PhoneNumber="05059639509",
                     CreatedBy = "System",
                     CreatedDate = DateTime.UtcNow,
                     ModifiedBy = "System",
@@ -44,7 +50,13 @@ namespace YigitAkuEmployee.Dal.EF.Seeds
                 },
                 new Employee
                 {
-                   
+
+                    FirstName="Elif",
+                    LastName="Kaymak",
+                    Email="elifkaymak@hotmail.com",
+                    DateOfBirth=new DateTime(1993,09,11),
+                    Department="Bilgi Teknolojileri",
+                    PhoneNumber="05321707777",
                     CreatedBy = "System",
                     CreatedDate = DateTime.UtcNow,
                     ModifiedBy = "System",
@@ -57,5 +69,6 @@ namespace YigitAkuEmployee.Dal.EF.Seeds
                 await context.Employees.AddRangeAsync(employees);
                 await context.SaveChangesAsync();
             }
+        }
     }
 }
