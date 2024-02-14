@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YigitAkuEmployee.Ent.Conf",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.Business", "YigitAkuEmployee.Business\YigitAkuEmployee.Business.csproj", "{93558524-3CC9-4EA1-BCB1-2783CEFF5696}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YigitAkuEmployee.WebApi", "YigitAkuEmployee.WebApi\YigitAkuEmployee.WebApi.csproj", "{B7D65F81-200F-4E17-BC03-2E8DD05F089D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93558524-3CC9-4EA1-BCB1-2783CEFF5696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7D65F81-200F-4E17-BC03-2E8DD05F089D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7D65F81-200F-4E17-BC03-2E8DD05F089D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7D65F81-200F-4E17-BC03-2E8DD05F089D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7D65F81-200F-4E17-BC03-2E8DD05F089D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
