@@ -1,0 +1,54 @@
+﻿@model EmployeeCreateVM
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Yeni Personel Kaydı</h4>
+                    <hr />
+                    <form asp-action="Create" method="post" enctype="multipart/form-data">
+                        <div class="text-danger" asp-validation-summary="All"></div>
+                       
+                        <div class="form-group">
+                            <label for="@Model.FirstName">İsim</label>
+                            <input asp-for="@Model.FirstName" type="text" class="form-control">
+                            <span asp-validation-for="FirstName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.LastName">Soyisim</label>
+                            <input asp-for="@Model.LastName" type="text" class="form-control">
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.Department">Departman</label>
+                            <input asp-for="@Model.Department" type="text" class="form-control">
+                            <span asp-validation-for="Department" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.Email">Email</label>
+                            <input asp-for="@Model.Email" type="email" class="form-control">
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.PhoneNumber">Telefon Numarası</label>
+                            <input asp-for="@Model.PhoneNumber" type="number" class="form-control">
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.DateOfBirth">Doğum Tarihi</label>
+                            <input asp-for="@Model.DateOfBirth" type="date" class="form-control">
+                            <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="@Model.Image">Resim</label>
+                            <input asp-for="@Model.Image" accept=".jpg,.jpeg,.png" type="file" class="form-control">
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary waves-effect waves-light">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

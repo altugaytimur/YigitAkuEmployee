@@ -7,6 +7,6 @@ namespace YigitAkuEmployee.WebApi.Infrastructure.Extensions
     {
         public static void ConfigureSqlContext(this IServiceCollection services,
         IConfiguration configuration) =>
-        services.AddDbContext<YigitAkuDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("sqlconnection")));
+        services.AddDbContext<YigitAkuDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("YigitAkuDbConnection")));
     }
 }

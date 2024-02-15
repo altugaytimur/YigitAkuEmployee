@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace YigitAkuEmployee.Dtos.EmployeeCrudDtos
 {
-    public class EmployeeUpdateDto
+    public class EmployeeUpdateDto:EmployeeBaseDto
     {
         public Guid Id { get; set; }
     }

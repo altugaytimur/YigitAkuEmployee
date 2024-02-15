@@ -1,0 +1,58 @@
+﻿@model EmployeeUpdateVM
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Personel Güncelleme</h4>
+                <hr />
+                <form asp-action="Update" method="post" enctype="multipart/form-data">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label for="@Model.FirstName">İsim</label>
+                        <input asp-for="@Model.FirstName" type="text" class="form-control">
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.LastName">Soyisim</label>
+                        <input asp-for="@Model.LastName" type="text" class="form-control">
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.Department">Departman</label>
+                        <input asp-for="@Model.Department" type="text" class="form-control">
+                        <span asp-validation-for="Department" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.Email">Email</label>
+                        <input asp-for="@Model.Email" type="email" class="form-control">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.PhoneNumber">Telefon Numarası</label>
+                        <input asp-for="@Model.PhoneNumber" type="number" class="form-control">
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.DateOfBirth">Doğum Tarihi</label>
+                        <input asp-for="@Model.DateOfBirth" type="date" class="form-control">
+                        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="@Model.Image">Resim</label>
+                        <input asp-for="@Model.Image" accept=".jpg,.jpeg,.png" type="file" class="form-control">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+                    </div>
+                    <div class="btn-group">
+                        <button type="submit" class="btn btn-primary waves-effect waves-light" data-toggle="tooltip" data-placement="bottom" title="Güncelle">
+                            Güncelle
+                        </button>
+                        <a class="btn btn-light" asp-action="Index" data-toggle="tooltip" data-placement="bottom" title="Listeye Dön">
+                            <i class="fas fa-list">  Listeye Dön</i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

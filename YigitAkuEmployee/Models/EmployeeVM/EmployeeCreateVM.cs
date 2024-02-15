@@ -4,7 +4,7 @@ namespace YigitAkuEmployee.MVC.Models.EmployeeVM
 {
     public class EmployeeCreateVM
     {
-        public Guid Id { get; set; }
+      
 
         [Display(Name = "İsim")]
         [Required(ErrorMessage = "{0} alanı boş bırakılamaz.")]
@@ -29,6 +29,7 @@ namespace YigitAkuEmployee.MVC.Models.EmployeeVM
         public string Department { get; set; }
 
         [Display(Name = "Fotoğraf")]
+        [DataType(DataType.Upload, ErrorMessage = "Lütfen geçerli bir dosya yükleyiniz.")]
         public IFormFile? Image { get; set; }
         [Display(Name = "Tel No")]
         public string? PhoneNumber { get; set; }

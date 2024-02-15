@@ -16,7 +16,7 @@ namespace YigitAkuEmployee.Dal.Contexts
 {
     public class YigitAkuDbContext:DbContext
     {
-        public const string ConnectionName = "sqlconnection";
+        public const string ConnectionName = "YigitAkuDbConnection";
 
         private readonly IHttpContextAccessor? _contextAccessor;
 

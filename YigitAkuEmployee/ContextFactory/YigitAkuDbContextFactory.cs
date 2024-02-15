@@ -10,7 +10,7 @@ namespace YigitAkuEmployee.MVC.ContextFactory
         {
             var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
-            var builder = new DbContextOptionsBuilder<YigitAkuDbContext>().UseSqlServer(configuration.GetConnectionString("sqlconnection"), prj => prj.MigrationsAssembly("YigitAkuEmployee.Dal"));
+            var builder = new DbContextOptionsBuilder<YigitAkuDbContext>().UseSqlServer(configuration.GetConnectionString("YigitAkuDbConnection"), prj => prj.MigrationsAssembly("YigitAkuEmployee.Dal"));
 
             return new YigitAkuDbContext(builder.Options);
         }

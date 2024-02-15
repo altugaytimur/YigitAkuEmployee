@@ -12,6 +12,7 @@ namespace YigitAkuEmployee.MVC.Profiles
             CreateMap<EmployeeListDto, EmployeListVM>();
             CreateMap<EmployeeCreateVM, EmployeeCreateDto>();
             CreateMap<EmployeeUpdateVM, EmployeeUpdateDto>();
+            CreateMap<EmployeeListDto, EmployeeUpdateVM>();
         }
     }
 }

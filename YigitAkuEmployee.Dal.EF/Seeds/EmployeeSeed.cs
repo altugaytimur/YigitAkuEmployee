@@ -11,7 +11,7 @@ namespace YigitAkuEmployee.Dal.EF.Seeds
         {
             var dbContextBuilder = new DbContextOptionsBuilder<YigitAkuDbContext>();
 
-            dbContextBuilder.UseSqlServer(configuration.GetConnectionString("sqlconnection"));
+            dbContextBuilder.UseSqlServer(configuration.GetConnectionString("YigitAkuDbConnection"));
 
             using YigitAkuDbContext context = new(dbContextBuilder.Options);
 

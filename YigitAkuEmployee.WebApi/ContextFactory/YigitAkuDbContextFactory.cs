@@ -11,7 +11,7 @@ namespace YigitAkuEmployee.WebApi.ContextFactory
             var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
 
             var builder = new DbContextOptionsBuilder<YigitAkuDbContext>()
-                .UseSqlServer(configuration.GetConnectionString("YigitAkuDbContext"), prj => prj.MigrationsAssembly("YigitAkuEmployee.Dal"));
+                .UseSqlServer(configuration.GetConnectionString("YigitAkuDbConnection"), prj => prj.MigrationsAssembly("YigitAkuEmployee.Dal"));
             return new YigitAkuDbContext(builder.Options);
         }
     }
